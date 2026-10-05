@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2E6D5" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#9C7E55" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Circular Luxury Badge -->
+  <circle cx="32" cy="32" r="30" fill="#121212" stroke="url(#goldGrad)" stroke-width="1.8" />
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#C5A880" stroke-width="0.6" stroke-dasharray="2,2" opacity="0.6" />
+
+  <!-- Monogram P + N with High-Fashion Serif Lines -->
+  <g fill="url(#goldGrad)" filter="url(#softGlow)">
+    <!-- Letter P -->
+    <path d="M22 44 V20 h7.5 c4.5 0 7.5 2.2 7.5 6.2 c0 4.2 -3.2 6.4 -7.5 6.4 H26.5 V44 H22 z M26.5 28.5 h2.8 c2.6 0 4.2 -1.1 4.2 -2.6 c0 -1.6 -1.5 -2.5 -4.2 -2.5 h-2.8 v5.1 z" />
+    <!-- Letter N subtle overlap -->
+    <path d="M37 44 V23 h3.8 l7.2 14.5 V23 h3.6 V44 h-3.6 l-7.4 -15 V44 H37 z" opacity="0.95" />
+  </g>
+
+  <!-- Tiny Gold Star / Diamond Accent -->
+  <path d="M32 12 l1 2.5 l2.5 1 l-2.5 1 l-1 2.5 l-1 -2.5 l-2.5 -1 l2.5 -1 z" fill="url(#goldGrad)" />
+</svg>

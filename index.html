@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuong Nga Nguyen — Editorial Portfolio & Strategic Narrative</title>
+  <meta name="description" content="Personal luxury editorial portfolio of Phuong Nga Nguyen: International Economics at Foreign Trade University (GPA 3.83/4.0), Vice-President of Finance & Operations at Club de Français de l'ESCE, Bilingual French & English scholar.">
+  
+  <!-- Custom Luxury Monogram Brand Favicon (P+N Metallic Gold on Dark Transparent Circular Badge) -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" sizes="any">
+  <link rel="shortcut icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+
+  <!-- High-End Editorial Typography: Bodoni Moda (High-Fashion Italic Accent), Cormorant Garamond & Playfair Display (Luxury Serif), Montserrat (Modern Editorial Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400;1,6..96,500;1,6..96,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="editorial-body">
+  <!-- High-End Luxury Textured Silk/Satin Background with Dynamic Blur Overlay -->
+  <div class="silk-background-layer" aria-hidden="true"></div>
+  <div class="silk-gradient-overlay" aria-hidden="true"></div>
+
+  <!-- Minimalist Visual Graphics: Subtle Noise Grain & Glowing Ambient Blur Light Orbs -->
+  <div class="luxury-grain" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-1" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-2" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-3" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- Continuous 10-Track Piano & Saxophone Luxury Audio Stream -->
+  <audio id="ambientAudio" preload="auto">
+    <source id="ambientAudioSource" src="./ambient.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Sticky Editorial Masthead (Clean Single-Line Responsive Horizontal Flexbar) -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      
+      <!-- Brand Monogram & Identity -->
+      <div class="masthead-brand">
+        <a href="#overview" class="brand-monogram" id="brandLink" title="Return to Overview">
+          <span class="monogram-letter">P</span>
+          <span class="monogram-sep">✦</span>
+          <span class="monogram-letter">N</span>
+        </a>
+        <div class="brand-text">
+          <span class="brand-name">Phuong Nga Nguyen</span>
+          <span class="brand-title">International Economics &bull; FTU</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links: Clean Uppercase Sans-Serif (No Numbers) -->
+      <nav class="masthead-nav" aria-label="Main Navigation">
+        <button type="button" class="nav-btn" data-target="01" id="nav-narrative">NARRATIVE</button>
+        <button type="button" class="nav-btn" data-target="02" id="nav-academics">ACADEMICS</button>
+        <button type="button" class="nav-btn" data-target="03" id="nav-leadership">LEADERSHIP</button>
+        <button type="button" class="nav-btn" data-target="04" id="nav-repertoire">REPERTOIRE</button>
+        <button type="button" class="nav-btn" data-target="05" id="nav-contact">CONTACT</button>
+      </nav>
+
+      <!-- Action Elements: Theme Switch, Ambient Music, Inquire CTA -->
+      <div class="masthead-actions">
+        <!-- Live Hanoi Clock (Ultra-compact) -->
+        <div class="masthead-status" title="Current Time in Ha Noi, Viet Nam">
+          <span class="status-indicator"></span>
+          <span class="status-text"><span id="localTime">--:--:--</span></span>
+        </div>
+
+        <!-- Ambient Music Switch (🎵 Continuous 10-Track Luxury Piano & Saxophone Playlist) -->
+        <button type="button" class="ambient-music-btn" id="ambientMusicToggle" aria-label="Toggle continuous piano & saxophone playlist" title="Toggle 10-Track Piano & Saxophone Playlist">
+          <div class="music-icon-wrap">
+            <svg class="music-note-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 18V5l12-2v13" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+            <div class="equalizer-bars" aria-hidden="true">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+            </div>
+          </div>
+          <span class="music-btn-label" id="musicLabel">MUSIC OFF</span>
+          <span class="music-track-indicator" id="musicTrackIndicator" title="Playlist Status">Track 1/10</span>
+        </button>
+
+        <!-- Luxury Light / Dark Mode Toggle Button (Light ☼ / Dark ☾) -->
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark theme" title="Switch luxury theme">
+          <span class="theme-badge theme-light-badge">Light ☼</span>
+          <span class="theme-badge theme-dark-badge">Dark ☾</span>
+        </button>
+
+        <a href="#contact" class="btn-editorial-cta" data-target="05" id="headerCtaBtn">
+          <span>Inquire</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main View Container (Clean Generous Padding-Top to Prevent Any Overlap, max-width: 1200px) -->
+  <main class="editorial-container" id="mainContainer">
+
+    <!-- HERO SHOWCASE SECTION -->
+    <section class="hero-showcase" id="overview">
+      <div class="hero-layout">
+        
+        <!-- Left Column: Haute Editorial Typography & Introduction -->
+        <div class="hero-narrative">
+          <!-- Refined Italic Editorial Accent (Bodoni Moda Italic) -->
+          <div class="editorial-accent-wrapper">
+            <span class="editorial-italic-accent">The Personal Narrative of</span>
+            <div class="accent-line"></div>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">PHUONG NGA</span>
+            <span class="title-line title-serif-italic">NGUYEN</span>
+          </h1>
+
+          <div class="hero-descriptors">
+            <span class="descriptor-item">International Economics Scholar</span>
+            <span class="descriptor-sep">&bull;</span>
+            <span class="descriptor-item">FTU Honors Student (3.83/4.0)</span>
+            <span class="descriptor-sep">&bull;</span>
+            <span class="descriptor-role">Vice-President of Finance &amp; Operations</span>
+            <span class="descriptor-sep">&bull;</span>
+            <span class="descriptor-org">CLUB DE FRANÇAIS DE L'ESCE</span>
+          </div>
+
+          <div class="hero-blockquote">
+            <p class="quote-text">
+              &ldquo;An open-minded International Economics student at Foreign Trade University who believes in learning through experience, discipline, and continuous self-growth. Driven by a curious mindset, exploring how systems work from financial planning and event logistics to cross-cultural communication.&rdquo;
+            </p>
+            <div class="quote-author">
+              <span class="gold-diamond">✦</span>
+              <span>Foreign Trade University &bull; Hanoi - Amsterdam Alumna</span>
+            </div>
+          </div>
+
+          <!-- Hero Metrics: Clean role display without any bug -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-card">
+              <div class="stat-num">3.83<span class="stat-sub">/4.0</span></div>
+              <div class="stat-label">Cumulative FTU GPA</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-card">
+              <div class="stat-num">DELF B2</div>
+              <div class="stat-label">Bilingual French Diploma</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-card hero-stat-leadership">
+              <div class="stat-num stat-role-num">Vice-President</div>
+              <div class="stat-label org-accent">Club de Français de l'ESCE</div>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn-luxury-primary" data-target="01" id="heroExploreBtn">
+              <span>Explore CV Chapters</span>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 10h12M11 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="btn-luxury-secondary" data-target="05" id="heroConnectBtn">
+              <span>Direct Inquiries</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual High-Fashion Portraiture Showcase -->
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-mat">
+              <div class="portrait-img-wrapper">
+                <img src="./avatar.jpg" alt="Phuong Nga Nguyen Portrait" class="portrait-img" id="heroAvatar">
+                <div class="portrait-overlay"></div>
+              </div>
+            </div>
+
+            <!-- Floating Editorial Labels & Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon">✦</div>
+              <div class="badge-content">
+                <span class="badge-title">FTU Merit Scholarship</span>
+                <span class="badge-sub">Semester 1 (2025–2026)</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon">🏛</div>
+              <div class="badge-content">
+                <span class="badge-title">Hanoi - Amsterdam High School</span>
+                <span class="badge-sub">Bilingual French &bull; GPA 9.6/10</span>
+              </div>
+            </div>
+
+            <div class="portrait-stamp">
+              <span class="stamp-circular-text">FTU &bull; INTERNATIONAL ECONOMICS &bull; 2026 &bull;</span>
+              <span class="stamp-inner-symbol">★</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHAPTER STRIP / VISUAL INTERACTIVE SLIDER (100% ZOOM FIT) -->
+    <section class="chapter-strip-section" id="chaptersStrip">
+      <div class="section-header-editorial">
+        <div class="strip-eyebrow">
+          <span class="editorial-accent-sm">Curated Chapters</span>
+          <span class="strip-tag">CLICK ANY CHAPTER BLOCK TO REVEAL DEEP DIVE</span>
+        </div>
+        <h2 class="strip-heading">Explore Portfolio Chapters</h2>
+      </div>
+
+      <div class="chapter-cards-slider" id="chapterSlider" role="region" aria-label="CV Chapters Strip">
+        
+        <!-- CARD 01: Narrative -->
+        <article class="chapter-card" data-chapter="01" tabindex="0" role="button" aria-expanded="false" id="card-01">
+          <div class="card-bg-watermark">01</div>
+          <div class="card-top">
+            <div class="card-number-tag">
+              <span class="tag-accent">CHAPTER</span>
+              <span class="tag-num">01</span>
+            </div>
+            <span class="card-italic-accent">The Personal Narrative</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Editorial Narrative &amp; Mindset</h3>
+            <p class="card-description">
+              Intellectual curiosity, rigorous self-discipline, and long-term systemic strategy in economics and operations.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Philosophy</span>
+              <span>Growth</span>
+              <span>Systems</span>
+            </div>
+            <div class="card-arrow-circle">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-shimmer"></div>
+        </article>
+
+        <!-- CARD 02: Academic Excellence -->
+        <article class="chapter-card" data-chapter="02" tabindex="0" role="button" aria-expanded="false" id="card-02">
+          <div class="card-bg-watermark">02</div>
+          <div class="card-top">
+            <div class="card-number-tag">
+              <span class="tag-accent">CHAPTER</span>
+              <span class="tag-num">02</span>
+            </div>
+            <span class="card-italic-accent">Scholastic Honors</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Academic Excellence</h3>
+            <p class="card-description">
+              FTU 3.83 GPA, Merit-Based Scholarship, Hanoi-Amsterdam bilingual valedictorian credentials, and Municipal Olympiad prizes.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>GPA 3.83</span>
+              <span>FTU Merit</span>
+              <span>Hanoi-Ams</span>
+            </div>
+            <div class="card-arrow-circle">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-shimmer"></div>
+        </article>
+
+        <!-- CARD 03: Leadership & Operations -->
+        <article class="chapter-card" data-chapter="03" tabindex="0" role="button" aria-expanded="false" id="card-03">
+          <div class="card-bg-watermark">03</div>
+          <div class="card-top">
+            <div class="card-number-tag">
+              <span class="tag-accent">CHAPTER</span>
+              <span class="tag-num">03</span>
+            </div>
+            <span class="card-italic-accent">Executive Stewardship</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Leadership &amp; Operations</h3>
+            <p class="card-description">
+              Vice-President of Finance &amp; Event Operations at Club de Français de l'ESCE: zero-overrun budgeting, sponsor alliances, and live execution.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Vice-President</span>
+              <span>CFE</span>
+              <span>Budgeting</span>
+            </div>
+            <div class="card-arrow-circle">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-shimmer"></div>
+        </article>
+
+        <!-- CARD 04: Strategic Repertoire -->
+        <article class="chapter-card" data-chapter="04" tabindex="0" role="button" aria-expanded="false" id="card-04">
+          <div class="card-bg-watermark">04</div>
+          <div class="card-top">
+            <div class="card-number-tag">
+              <span class="tag-accent">CHAPTER</span>
+              <span class="tag-num">04</span>
+            </div>
+            <span class="card-italic-accent">Analytical Mastery</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Strategic Repertoire</h3>
+            <p class="card-description">
+              Multilingual fluency (French DELF B2 &amp; English) combined with quantitative acumen: Python, SQL Server, MS Access, Stata &amp; Excel.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Python &amp; SQL</span>
+              <span>Stata</span>
+              <span>French B2</span>
+            </div>
+            <div class="card-arrow-circle">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-shimmer"></div>
+        </article>
+
+        <!-- CARD 05: Professional Contact -->
+        <article class="chapter-card" data-chapter="05" tabindex="0" role="button" aria-expanded="false" id="card-05">
+          <div class="card-bg-watermark">05</div>
+          <div class="card-top">
+            <div class="card-number-tag">
+              <span class="tag-accent">CHAPTER</span>
+              <span class="tag-num">05</span>
+            </div>
+            <span class="card-italic-accent">Correspondence</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Professional Contact</h3>
+            <p class="card-description">
+              Ha Noi, Viet Nam. Direct communications for academic symposiums, operational leadership, and economic research inquiries.
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span>Ha Noi, VN</span>
+              <span>Email &amp; Phone</span>
+              <span>Open Connect</span>
+            </div>
+            <div class="card-arrow-circle">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-shimmer"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- EXPANDED CHAPTER VIEWS (FLUID SCALE-UP / FADE & SLIDE MODAL) -->
+    <!-- ============================================================== -->
+
+    <div class="chapter-overlay" id="chapterOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="overlay-backdrop" id="overlayBackdrop"></div>
+      
+      <div class="overlay-window" id="overlayWindow">
+        
+        <!-- Persistent Floating Navigation Switch inside Chapter View -->
+        <div class="overlay-header">
+          <div class="overlay-chapter-indicator">
+            <span class="indicator-prefix">CV CHAPTER</span>
+            <span class="indicator-current" id="activeChapterNum">01</span>
+            <span class="indicator-divider">/</span>
+            <span class="indicator-total">05</span>
+            <span class="indicator-title-crumb" id="activeChapterTitleCrumb">Editorial Narrative</span>
+          </div>
+
+          <div class="overlay-controls">
+            <!-- Chapter Quick Switcher Tabs -->
+            <div class="overlay-quick-tabs">
+              <button class="quick-tab-btn" data-switch="01">01</button>
+              <button class="quick-tab-btn" data-switch="02">02</button>
+              <button class="quick-tab-btn" data-switch="03">03</button>
+              <button class="quick-tab-btn" data-switch="04">04</button>
+              <button class="quick-tab-btn" data-switch="05">05</button>
+            </div>
+
+            <!-- Return Button with graceful reverse animation -->
+            <button type="button" class="btn-return-overview" id="closeOverlayBtn" aria-label="Return to Overview">
+              <span class="return-text">Return to Overview</span>
+              <span class="return-icon">&times;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="overlay-content-scroll" id="overlayContentScroll">
+          
+          <!-- CHAPTER 01 CONTENT -->
+          <div class="chapter-content-pane" id="pane-01">
+            <div class="chapter-header-block">
+              <div class="editorial-accent-wrapper">
+                <span class="editorial-italic-accent">The Personal Narrative of</span>
+              </div>
+              <h2 class="pane-title">Intellectual Philosophy &amp; Narrative</h2>
+              <p class="pane-subtitle">Grounding economic systems through discipline, cross-cultural diplomacy, and empirical diligence.</p>
+            </div>
+
+            <div class="pane-grid-2col">
+              <div class="pane-story-card">
+                <div class="story-tag">EXECUTIVE PROFILE</div>
+                <h3 class="story-heading">Curious Mindset. Systemic Execution.</h3>
+                <p class="story-p lead">
+                  I am an open-minded <strong>International Economics student at Foreign Trade University (FTU)</strong> who firmly believes in learning through experience, discipline, and continuous self-growth.
+                </p>
+                <p class="story-p">
+                  Driven by an innate curiosity about complex structures, I explore how macroeconomic mechanisms and micro-level operations intertwine — from rigorous financial planning and resource forecasting to on-site event logistics and international cross-cultural communication.
+                </p>
+                <p class="story-p">
+                  Every initiative I undertake is governed by three foundational anchors: <em>long-term strategic vision</em>, <em>meticulous attention to detail</em>, and a commitment to generating tangible, measurable impact.
+                </p>
+
+                <div class="quote-editorial-box">
+                  <div class="quote-gold-border"></div>
+                  <p>&ldquo;True operational elegance lies at the nexus of analytical precision and human empathy.&rdquo;</p>
+                  <span class="quote-sig">— Phuong Nga Nguyen</span>
+                </div>
+              </div>
+
+              <div class="pane-pillars-card">
+                <div class="story-tag">CORE OPERATING PRINCIPLES</div>
+                <div class="pillars-list">
+                  <div class="pillar-item">
+                    <div class="pillar-index">I</div>
+                    <div class="pillar-body">
+                      <h4>Disciplined Self-Growth</h4>
+                      <p>Committing to continuous learning cycles through high academic rigor and relentless self-reflection across all endeavors.</p>
+                    </div>
+                  </div>
+                  <div class="pillar-item">
+                    <div class="pillar-index">II</div>
+                    <div class="pillar-body">
+                      <h4>Systemic Architecture</h4>
+                      <p>Viewing organizational challenges not in isolation, but as interconnected systems of budgets, timelines, and human relationships.</p>
+                    </div>
+                  </div>
+                  <div class="pillar-item">
+                    <div class="pillar-index">III</div>
+                    <div class="pillar-body">
+                      <h4>Cross-Cultural Fluency</h4>
+                      <p>Harnessing bilingual French &amp; English communication to bridge cultural perspectives and foster productive international partnerships.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="narrative-meta-specs">
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Current Focus</span>
+                    <span class="spec-v">3rd-Year International Economics, FTU</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Academic Foundation</span>
+                    <span class="spec-v">Hanoi - Amsterdam High School for the Gifted</span>
+                  </div>
+                  <div class="meta-spec-row">
+                    <span class="spec-k">Executive Leadership</span>
+                    <span class="spec-v">Vice-President &bull; Club de Français de l'ESCE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHAPTER 02 CONTENT -->
+          <div class="chapter-content-pane" id="pane-02">
+            <div class="chapter-header-block">
+              <div class="editorial-accent-wrapper">
+                <span class="editorial-italic-accent">Scholastic Pedigree &amp; Recognitions</span>
+              </div>
+              <h2 class="pane-title">Academic Excellence</h2>
+              <p class="pane-subtitle">Demonstrated scholastic distinction at Vietnam's premier foreign trade university and top gifted academy.</p>
+            </div>
+
+            <!-- University & High School Deep Dive -->
+            <div class="education-grid">
+              
+              <div class="edu-card featured-edu">
+                <div class="edu-period">2024 &mdash; PRESENT</div>
+                <div class="edu-badge">CURRENT UNIVERSITY</div>
+                <h3 class="edu-institution">Foreign Trade University (FTU)</h3>
+                <div class="edu-major">Major: International Economics &bull; 3rd-Year Student</div>
+                
+                <div class="gpa-highlight-bar">
+                  <div class="gpa-number">3.83<span class="gpa-scale">/4.0</span></div>
+                  <div class="gpa-details">
+                    <span class="gpa-status">Exceptional Distinction</span>
+                    <span class="gpa-desc">Consistently ranked in the top academic tier of International Economics scholars</span>
+                  </div>
+                </div>
+
+                <ul class="edu-highlights">
+                  <li>In-depth coursework in Global Trade Dynamics, International Finance, Econometric Modeling, and Quantitative Analysis.</li>
+                  <li>Recipient of FTU Merit-Based Academic Scholarship awarded to outstanding students.</li>
+                  <li>Active integration of theoretical economic paradigms with live institutional budgeting and operations.</li>
+                </ul>
+              </div>
+
+              <div class="edu-card">
+                <div class="edu-period">2021 &mdash; 2024</div>
+                <div class="edu-badge">SECONDARY SCHOLASTIC ALUMNA</div>
+                <h3 class="edu-institution">Hanoi - Amsterdam High School for the Gifted</h3>
+                <div class="edu-major">Program: Bilingual French &ndash; Vietnamese Class</div>
+
+                <div class="annual-gpa-grid">
+                  <div class="annual-gpa-box">
+                    <span class="grade-label">Grade 10</span>
+                    <span class="grade-val">9.5 <span class="grade-denom">/10</span></span>
+                  </div>
+                  <div class="annual-gpa-box">
+                    <span class="grade-label">Grade 11</span>
+                    <span class="grade-val">9.5 <span class="grade-denom">/10</span></span>
+                  </div>
+                  <div class="annual-gpa-box highlight">
+                    <span class="grade-label">Grade 12</span>
+                    <span class="grade-val">9.6 <span class="grade-denom">/10</span></span>
+                  </div>
+                </div>
+
+                <p class="edu-notes">
+                  Selected through rigorous national competitive examinations into Hanoi - Amsterdam's renowned Bilingual French program, establishing advanced linguistic mastery and analytical rigor.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Honors and Awards Showcase -->
+            <div class="honors-editorial-section">
+              <div class="section-subheading">
+                <span class="gold-star">✦</span>
+                <span>Honors, Accolades &amp; Distinctions</span>
+              </div>
+
+              <div class="honors-deck">
+                
+                <div class="honor-card">
+                  <div class="honor-year">2025 &ndash; 2026</div>
+                  <div class="honor-tier">Institutional Honor</div>
+                  <h4 class="honor-title">FTU Merit-Based Academic Scholarship</h4>
+                  <p class="honor-scope">Awarded for Semester 1 (2025–2026) in recognition of scholastic excellence, top-percentile GPA standing, and exemplary academic integrity.</p>
+                </div>
+
+                <div class="honor-card highlight-award">
+                  <div class="honor-year">2023 &ndash; 2024</div>
+                  <div class="honor-tier">Municipal Distinction</div>
+                  <h4 class="honor-title">Second Prize &ndash; Municipal Excellence Contest in French</h4>
+                  <p class="honor-scope">Official Hanoi Department of Education &amp; Training competition for 12th-grade students; evaluated on advanced literary translation, essay composition, and linguistics.</p>
+                </div>
+
+                <div class="honor-card">
+                  <div class="honor-year">2022 &ndash; 2023</div>
+                  <div class="honor-tier">Collegiate Olympiad</div>
+                  <h4 class="honor-title">Third Prize &ndash; High School Olympiad Contest in French</h4>
+                  <p class="honor-scope">Organized by Vietnam National University, Hanoi (VNU), recognizing superior proficiency in French grammar, comprehension, and oral-written synthesis.</p>
+                </div>
+
+                <div class="honor-card">
+                  <div class="honor-year">2022 &ndash; 2023</div>
+                  <div class="honor-tier">Civic Recognition</div>
+                  <h4 class="honor-title">City-Level &ldquo;3-Good Student&rdquo; Title</h4>
+                  <p class="honor-scope">Municipal distinction honoring students who achieve tri-fold mastery: Good Ethics, Good Academics, and Good Fitness &amp; Civic Engagement.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CHAPTER 03 CONTENT -->
+          <div class="chapter-content-pane" id="pane-03">
+            <div class="chapter-header-block">
+              <div class="editorial-accent-wrapper">
+                <span class="editorial-italic-accent">Orchestrating Strategic Impact</span>
+              </div>
+              <h2 class="pane-title">Leadership &amp; Event Operations</h2>
+              <p class="pane-subtitle">Executive vice-presidency steering financial accountability, sponsor alliances, and logistical precision.</p>
+            </div>
+
+            <!-- Role Banner: Correct Organization & Role Display -->
+            <div class="leadership-hero-banner">
+              <div class="banner-left">
+                <span class="exec-badge">EXECUTIVE BOARD MEMBER</span>
+                <h3 class="exec-title">Vice-President of Finance &amp; Operations</h3>
+                <h4 class="exec-org">CLUB DE FRANÇAIS DE L'ESCE</h4>
+                <span class="exec-tenure">Foreign Trade University &bull; 2024 &mdash; Present</span>
+              </div>
+              <div class="banner-right">
+                <div class="exec-quote">
+                  &ldquo;Orchestrating large-scale cultural and academic initiatives requires harmonizing strict budgetary governance with agile on-site problem solving.&rdquo;
+                </div>
+              </div>
+            </div>
+
+            <!-- Two Operational Pillars -->
+            <div class="pillars-deep-dive">
+              
+              <!-- Pillar 1: Financial & Budget Management -->
+              <div class="deep-dive-card">
+                <div class="card-pillar-header">
+                  <div class="pillar-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <rect x="2" y="5" width="20" height="14" rx="2"/>
+                      <line x1="2" y1="10" x2="22" y2="10"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="pillar-label">PILLAR 01</span>
+                    <h3 class="pillar-name">Financial &amp; Budget Management</h3>
+                  </div>
+                </div>
+
+                <div class="pillar-body-text">
+                  <p>Guiding the fiscal integrity of all official club initiatives at Club de Français de l'ESCE, maintaining disciplined allocation and absolute cost transparency:</p>
+                  
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Predictive Event Budgeting:</strong> Developed and calibrated comprehensive event expense models for all club programs, successfully containing operational costs within predetermined limits.
+                    </div>
+                  </div>
+
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Club Fund Governance:</strong> Supervised treasury reserves, implemented structured reimbursement pipelines, and generated auditable financial statements.
+                    </div>
+                  </div>
+
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Institutional &amp; Sponsor Representation:</strong> Served as primary financial liaison presenting accountability records directly to the FTU Youth Union and corporate sponsors.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pillar-metric-tag">Zero Deficit Operational Track Record</div>
+              </div>
+
+              <!-- Pillar 2: Event Logistics & Operations -->
+              <div class="deep-dive-card">
+                <div class="card-pillar-header">
+                  <div class="pillar-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="pillar-label">PILLAR 02</span>
+                    <h3 class="pillar-name">Event Logistics &amp; Strategic Operations</h3>
+                  </div>
+                </div>
+
+                <div class="pillar-body-text">
+                  <p>Executing end-to-end event infrastructure from preparatory vendor negotiations to live troubleshooting:</p>
+                  
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Vendor Sourcing &amp; Contract Negotiation:</strong> Conducted vendor research and direct negotiations for venue bookings, high-volume print runs, stage engineering, and audio-visual apparatus.
+                    </div>
+                  </div>
+
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Team Deployment &amp; Workflow Tracking:</strong> Designed operational playbooks, delegated task sequences to sub-committees, and tracked milestone completion against tight deadlines.
+                    </div>
+                  </div>
+
+                  <div class="duty-item">
+                    <span class="duty-bullet">✦</span>
+                    <div>
+                      <strong>Live On-Site Crisis Resolution:</strong> Managed backstage command during live flagship events, mitigating technical bottlenecks and logistical variables with calm resolve.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pillar-metric-tag">High-Efficiency Protocol &amp; Cross-Team Synergy</div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- CHAPTER 04 CONTENT -->
+          <div class="chapter-content-pane" id="pane-04">
+            <div class="chapter-header-block">
+              <div class="editorial-accent-wrapper">
+                <span class="editorial-italic-accent">Capabilities, Tools &amp; Methodologies</span>
+              </div>
+              <h2 class="pane-title">Strategic Repertoire</h2>
+              <p class="pane-subtitle">A synthesis of quantitative economics software, cross-border linguistics, and operational prowess.</p>
+            </div>
+
+            <div class="repertoire-sections">
+              
+              <!-- 1. Linguistic Mastery -->
+              <div class="repertoire-group">
+                <div class="group-header">
+                  <div class="group-title-wrap">
+                    <span class="group-k">01</span>
+                    <h3 class="group-title">Linguistic Mastery &amp; Cross-Cultural Fluency</h3>
+                  </div>
+                  <span class="group-badge">Multilingual Diplomatic Competency</span>
+                </div>
+
+                <div class="languages-grid">
+                  <div class="lang-card">
+                    <div class="lang-top">
+                      <span class="lang-name">French</span>
+                      <span class="lang-cert">DELF B2 Certified</span>
+                    </div>
+                    <p class="lang-desc">
+                      Formal bilingual training since Hanoi-Amsterdam High School for the Gifted. Capable of analytical synthesis, literature translation, debate, and executive communication. Second Prize Municipal French Olympiad.
+                    </p>
+                    <div class="lang-bar-wrap">
+                      <div class="lang-progress-bar" style="width: 90%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="lang-card">
+                    <div class="lang-top">
+                      <span class="lang-name">English</span>
+                      <span class="lang-cert">Conversational &amp; Academic</span>
+                    </div>
+                    <p class="lang-desc">
+                      Applied across international economics research papers, academic textbooks, multilateral business negotiations, and global presentations at Foreign Trade University.
+                    </p>
+                    <div class="lang-bar-wrap">
+                      <div class="lang-progress-bar" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Technical, Econometric & Quantitative Tools -->
+              <div class="repertoire-group">
+                <div class="group-header">
+                  <div class="group-title-wrap">
+                    <span class="group-k">02</span>
+                    <h3 class="group-title">Quantitative Analytics &amp; Technical Software</h3>
+                  </div>
+                  <span class="group-badge">Data-Driven Economics</span>
+                </div>
+
+                <div class="tech-grid">
+                  
+                  <div class="tech-chip">
+                    <div class="tech-icon-circle">Py</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">Python</span>
+                      <span class="tech-sub">Data analysis, statistical workflows &amp; economic automation</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-chip">
+                    <div class="tech-icon-circle">SQL</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">SQL Server</span>
+                      <span class="tech-sub">Relational schema design, queries, aggregation &amp; data retrieval</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-chip">
+                    <div class="tech-icon-circle">Acc</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">MS Access</span>
+                      <span class="tech-sub">Database management, tabular tracking &amp; structured reporting</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-chip">
+                    <div class="tech-icon-circle">St</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">Stata</span>
+                      <span class="tech-sub">Econometric modeling, regressions &amp; empirical data analysis</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-chip highlight-chip">
+                    <div class="tech-icon-circle">Xls</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">Advanced MS Excel</span>
+                      <span class="tech-sub">Financial Tracking, Pivot Tables, XLOOKUP, Scenario Modeling</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-chip">
+                    <div class="tech-icon-circle">G</div>
+                    <div class="tech-meta">
+                      <span class="tech-name">Google Workspace</span>
+                      <span class="tech-sub">Collaborative cloud coordination, documentation &amp; live scheduling</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 3. Cross-Functional & Operational Competencies -->
+              <div class="repertoire-group">
+                <div class="group-header">
+                  <div class="group-title-wrap">
+                    <span class="group-k">03</span>
+                    <h3 class="group-title">Cross-Functional Leadership Competencies</h3>
+                  </div>
+                  <span class="group-badge">Executive Core</span>
+                </div>
+
+                <div class="competencies-editorial-grid">
+                  <div class="comp-box">
+                    <span class="comp-roman">I</span>
+                    <h4>Event Planning &amp; Operations</h4>
+                    <p>Orchestration of complex timelines, site logistics, safety checks, and live attendee experience.</p>
+                  </div>
+
+                  <div class="comp-box">
+                    <span class="comp-roman">II</span>
+                    <h4>Budgeting &amp; Cost Control</h4>
+                    <p>Variance analysis, predictive cash flow modeling, and cost-containment frameworks.</p>
+                  </div>
+
+                  <div class="comp-box">
+                    <span class="comp-roman">III</span>
+                    <h4>Negotiation &amp; Partner Management</h4>
+                    <p>Sponsor pitch alignment, vendor contract negotiation, and stakeholder consensus building.</p>
+                  </div>
+
+                  <div class="comp-box">
+                    <span class="comp-roman">IV</span>
+                    <h4>Team Coordination &amp; Problem Solving</h4>
+                    <p>Agile squad delegation, morale cultivation, and swift mitigation of operational friction.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CHAPTER 05 CONTENT -->
+          <div class="chapter-content-pane" id="pane-05">
+            <div class="chapter-header-block">
+              <div class="editorial-accent-wrapper">
+                <span class="editorial-italic-accent">Initiate Correspondence</span>
+              </div>
+              <h2 class="pane-title">Professional Contact</h2>
+              <p class="pane-subtitle">Open for discussions in international trade research, operational leadership, and academic collaborations.</p>
+            </div>
+
+            <div class="contact-editorial-layout">
+              
+              <!-- Left: Verified Contact Dossier -->
+              <div class="contact-dossier-card">
+                <div class="dossier-badge">DIRECT CHANNELS</div>
+                <h3 class="dossier-name">Phuong Nga Nguyen</h3>
+                <p class="dossier-role">International Economics Scholar &bull; Vice-President at Club de Français de l'ESCE</p>
+                
+                <div class="dossier-items">
+                  
+                  <div class="dossier-item" id="copyEmailTrigger" role="button" tabindex="0" title="Click to copy email address">
+                    <div class="dossier-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                      </svg>
+                    </div>
+                    <div class="dossier-text">
+                      <span class="dossier-label">Official Email (Click to Copy)</span>
+                      <span class="dossier-val email-highlight" id="emailVal">nguyenphuongnga716@gmail.com</span>
+                    </div>
+                    <span class="copy-badge-pill" id="copyBadge">Copy</span>
+                  </div>
+
+                  <div class="dossier-item">
+                    <div class="dossier-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                      </svg>
+                    </div>
+                    <div class="dossier-text">
+                      <span class="dossier-label">Telephone Direct</span>
+                      <a href="tel:+84936037828" class="dossier-val">+84 93 603 7828</a>
+                    </div>
+                  </div>
+
+                  <div class="dossier-item">
+                    <div class="dossier-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                    </div>
+                    <div class="dossier-text">
+                      <span class="dossier-label">Primary Residence &amp; University Base</span>
+                      <span class="dossier-val">Ha Noi, Viet Nam</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="cv-download-box">
+                  <div class="cv-prompt">
+                    <strong>Direct Curriculum Vitae</strong>
+                    <span>Verified Academic &amp; Professional Credentials</span>
+                  </div>
+                  <button type="button" class="btn-luxury-primary" id="printCvBtn">
+                    <span>Print / Save Dossier</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M4 6V2h8v4M4 12H3a2 2 0 01-2-2V8a2 2 0 012-2h10a2 2 0 012 2v2a2 2 0 01-2 2h-1M4 9h8v5H4V9z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right: Editorial Inquiry Dispatch Form -->
+              <div class="contact-form-card">
+                <div class="form-header">
+                  <span class="editorial-accent-sm">Direct Dispatch</span>
+                  <h3 class="form-title">Send a Formal Inquiry</h3>
+                  <p class="form-subtitle">Messages are transmitted directly to nguyenphuongnga716@gmail.com.</p>
+                </div>
+
+                <form id="contactForm" class="editorial-form">
+                  <div class="form-group">
+                    <label for="senderName" class="form-label">Your Full Name &bull; Organization</label>
+                    <input type="text" id="senderName" class="form-input" placeholder="e.g. Dr. Eleanor Vance &bull; Oxford Economics" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderEmail" class="form-label">Official Email Address</label>
+                    <input type="email" id="senderEmail" class="form-input" placeholder="e.g. eleanor.vance@institution.org" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inquiryType" class="form-label">Nature of Inquiry</label>
+                    <select id="inquiryType" class="form-select">
+                      <option value="Academic &amp; Economic Research">Academic &amp; Economic Research Collaboration</option>
+                      <option value="Event Leadership &amp; Operations">Executive Event Planning &amp; Operations</option>
+                      <option value="Financial &amp; Budgeting Stewardship">Financial Analysis &amp; Budget Governance</option>
+                      <option value="Multilingual French-English Inquiries">Multilingual / French-English Engagement</option>
+                      <option value="General Professional Introduction">General Professional Introduction</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="messageText" class="form-label">Message Dossier</label>
+                    <textarea id="messageText" class="form-textarea" rows="4" placeholder="Detail the context of your proposed endeavor or inquiry..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-luxury-primary btn-submit-form" id="submitFormBtn">
+                    <span>Dispatch Transmission</span>
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M14 2L2 7.5l5 2.5 2.5 5L14 2z"/>
+                    </svg>
+                  </button>
+                  <div class="form-status" id="formStatus"></div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- /.overlay-content-scroll -->
+
+      </div> <!-- /.overlay-window -->
+    </div> <!-- /.chapter-overlay -->
+
+  </main>
+
+  <!-- Editorial Colophon / Footer -->
+  <footer class="editorial-colophon">
+    <div class="colophon-inner">
+      <div class="colophon-brand">
+        <span class="colophon-title">PHUONG NGA NGUYEN</span>
+        <span class="colophon-sub">International Economics &bull; Foreign Trade University</span>
+      </div>
+
+      <div class="colophon-quote">
+        <span class="editorial-accent-sm">&ldquo;Driven by a curious mindset, exploring how systems work.&rdquo;</span>
+      </div>
+
+      <div class="colophon-meta">
+        <span>&copy; 2026 Phuong Nga Nguyen. All rights reserved.</span>
+        <span>Curated with editorial distinction. Uplifting classical score.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
